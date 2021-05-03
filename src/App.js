@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header/Header';
+import Balance from './components/Balance/Balance';
+import AddTransactions from './components/AddTransactions/AddTransactions';
+import { useReducer } from 'react';
+import TransactionList from './components/TransactionsList/TransactionsList';
+import { Context } from './state/context';
+import { reducer, initialState } from './state/reducer';
+import IncomeExpence from './components/IncomeExpence/IncomeExpence';
+
+
 
 function App() {
+  const [state, dispatch] = useReducer(reducer, initialState);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='app'>
+      <div className='container'>
+      <Context.Provider value={{ state, dispatch }}>
+        <Header />
+        <AddTransactions />
+        <TransactionList />
+        <IncomeExpence/>
+        <Balance />
+      </Context.Provider>
+      </div>     
     </div>
   );
 }

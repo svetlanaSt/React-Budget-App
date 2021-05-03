@@ -1,0 +1,14 @@
+.header {
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);    
+    margin: 0 auto;
+    width: 500px;
+    height: 70px;   
+    text-align: center; 
+    background: linear-gradient(4deg, #9c66ff, #e374ff);
+}
+
+.header h1 {
+   padding-top: 10px;
+}
+   
