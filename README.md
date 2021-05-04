@@ -1,6 +1,5 @@
 ##React Budget App
 
-<<<<<<< HEAD
 ###Потестить: [нажать](https://svetlanast.github.io/React-Budget-App/)
 
 
