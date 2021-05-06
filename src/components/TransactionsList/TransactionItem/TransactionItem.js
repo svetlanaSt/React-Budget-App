@@ -8,7 +8,7 @@ function TransactionItem({ text, amount, id }) {
 
     const deleteItem = (id) => {        
         dispatch({ type: 'DELETE-TRANSACTION', payload: id })
-    }
+    };
 
     return (
         <li className='item'>

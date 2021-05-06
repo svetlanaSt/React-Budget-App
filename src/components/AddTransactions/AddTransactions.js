@@ -18,7 +18,7 @@ function AddTransactions() {
         };
 
         dispatch({type: 'ADD-TRANSACTION', payload: transaction});        
-    }
+    };
 
     return (
         <div className='form'>

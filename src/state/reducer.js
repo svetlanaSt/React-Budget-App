@@ -1,7 +1,7 @@
 
 export const initialState = {
     transactions: []
-}
+};
 
 export function reducer(state = initialState, action) {
     switch (action.type) {
@@ -19,4 +19,4 @@ export function reducer(state = initialState, action) {
         default:
             return state;
     }
-}
+};
